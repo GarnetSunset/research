@@ -243,6 +243,12 @@ We have written a bare-bones client implementation in Python that uses the [Core
 
 The kernel used by Oculus Quest was vulnerable to CVE-2018-9568 up to version `256550.6810.0` ([this commit](https://github.com/facebookincubator/oculus-linux-kernel/commit/589280fc40ddbcc2287024c8b672568a0fdd68e7#diff-56c7c22bc6dcdc2c4ff303ab61738ff2R1526) fixes the vulnerability). An exploit for it should be available in the [`exploit`](https://github.com/QuestEscape/exploit) repository.
 
+## Feature Gates
+
+`/data/oculus/settings/user0.db` contains user controllable settings, as well as future features, such as, at the time of writing (12/3/2019) hand tracking toggles. (hand_opt_in)
+`/data/data/com.oculus.vrshell/shared_prefs/vrshell_flags.xml` contains flags that can be set to enable in-development features and some debug features.
+`/data/data/com.oculus.vrshell/shared_prefs/MainActivity.xml` contains many toggles for feature flags including the debug menu which appears as a small cog on the navigation bar. 
+
 ## Miscellaneous
 
 The internal server used to generate unlock codes is located at [https://our.internmc.facebook.com/intern/oculus/oem_unlock](https://our.internmc.facebook.com/intern/oculus/oem_unlock).
