@@ -246,7 +246,9 @@ The kernel used by Oculus Quest was vulnerable to CVE-2018-9568 up to version `2
 ## Feature Gates
 
 `/data/oculus/settings/user0.db` contains user controllable settings, as well as future features, such as, at the time of writing (12/3/2019) hand tracking toggles. (hand_opt_in)
+
 `/data/data/com.oculus.vrshell/shared_prefs/vrshell_flags.xml` contains flags that can be set to enable in-development features and some debug features.
+
 `/data/data/com.oculus.vrshell/shared_prefs/MainActivity.xml` contains many toggles for feature flags including the debug menu which appears as a small cog on the navigation bar. 
 
 ## Miscellaneous
